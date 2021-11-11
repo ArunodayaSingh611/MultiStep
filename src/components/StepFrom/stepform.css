@@ -1,0 +1,235 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,500;1,300;1,500&display=swap');
+
+
+.box{
+    position: relative;
+    width: 1020px;
+    height: 500px;
+    margin-bottom: 10px;
+    border-radius: 3.3rem;
+    box-shadow: 0 60px 40px -30px rgba(0,0,0, 0.27);
+    background-color: #fff;
+    /* border: 2px solid navy; */
+}
+
+.inner-box{
+    position: absolute;
+    width: calc(100% - 4.1rem);
+    height: calc(100% - 4.1rem);
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50% );
+    /* background-color: #e9f1ff; */
+    /* border: 2px solid black; */
+    border-radius: 2rem;
+    
+}
+
+.carsoul{
+    position:absolute;
+    height: 100%;
+    width: 45%;
+    right: 0%;
+    top: 0;
+    background-color: #003567;
+    border-radius: 2rem; 
+    display: grid;
+    grid-template-rows: auto 1fr;
+    padding-bottom: 5px;
+    overflow: hidden;
+}
+
+.img-wrap{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    height: 90px;
+    width: 130px;
+    margin-top: 75px;
+    margin-left: 150px;
+}
+
+.img{
+    width: 100%;
+    grid-column: 1/2;
+    grid-row: 1/2;
+    /* opacity: 0; */
+    transform: opacity 0.3s;
+}
+
+.img.show{
+    opacity: 1;
+    transform: none;
+}
+
+.img-one{
+    transform: translateY(0, -50px);
+}
+
+.img-two{
+    transform: scale(0.4, 0.5);
+}
+
+.img-three{
+    transform: scale(0.3), rotate(-20deg);
+}
+
+.text-slider{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+/* .text-wrap{
+    max-height: 2.2rem;
+    overflow: hidden;
+    background-color: green;
+} */
+
+.text-wrap{
+    max-height: 2.2rem;
+    overflow: hidden;
+    margin-top: 130px;
+    color: #12c6bd;
+    /* background-color: black; */
+    margin-bottom: 2.2rem;
+}
+.text-group{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    transform: translateY(0);
+
+}
+.text-group h2{
+    line-height: 2.2rem;
+    font-weight: 600;
+    font-size: 1.6rem;
+}
+
+.bullets{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.bullets span{
+    display: block;
+    width: 0.5rem;
+    height: 0.5em;
+    background-color: #fff;
+    margin: 0 0.25rem;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.bullets span.active{
+    width: 1.1rem;
+    background-color: #fff;
+    border-radius: 1rem;
+}
+
+
+.form-step{
+    /* border: 2px solid yellow; */
+    position: absolute;
+    height: 100%;
+    width: 55%;
+    top: 0;
+    left: 0;
+    
+}
+
+.gs-form BUTTON{
+    margin-top: 40px;
+}
+
+.logos{
+    height: 100px;
+    width: 250px;
+    margin-top: 20px;
+    margin-left: 400px;
+    display: flex;
+    align-items: center;
+} 
+.head1 h3{
+    margin-left: 20px;
+    font-size: 45px;
+    font-family: "Poppins", sans-serif;
+}
+
+  
+#logo-img{
+    height: 90px;
+    width: 240px;
+    margin-top: -25px;
+    margin-left: -250px;
+    /* border: 2px solid purple;*/
+    display: flex; 
+}
+
+#img{
+    height: 170px;
+    width: 240px;
+    margin-top: 130px;
+    margin-left: 55px;
+    /* border: 2px solid purple; */
+    display: flex;
+}
+
+
+.container TextField{
+    outline: 2px solid black;
+    width: 600px;
+}
+
+.container label{
+    padding: 10px;
+}
+
+.container{  
+    padding: 20px;
+    margin-right: 10px;
+    margin-top: 5px;
+    max-width: 500px;
+    min-height: 180px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    /* background-color: #e9f1ff;
+    border-radius: 2rem; */
+    /* border: 2px solid red;  */
+    font-size: 22px;
+    font-family: "Poppins", sans-serif;
+}
+
+
+@media (max-width: 850px){
+   .box{
+       height: auto;
+       max-width: 550px;
+       overflow: hidden;
+   }
+   .inner-box{
+       position: static;
+       transform: none;
+       width: revert;
+       height: revert;
+       padding: 2.2rem;
+   }
+   .form-step{
+       position: revert;
+       width: 100%;
+       height: auto;
+   }
+   .carsoul{
+       position: revert;
+       width: 100%;
+       height: auto;
+       padding: 3rem 2rem;
+   }
+   .img-wrap{
+       display: none;   
+   }
+}
